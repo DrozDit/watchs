@@ -3,7 +3,7 @@ import { TimeManager } from './time.js';
 import { Progress } from './Progress.js';
 import { Popup } from './popup.js';
 
-// Инициализация компонентов
+
 const timeManager = new TimeManager();
 const clock = new Clock();
 const progress = new Progress();
@@ -60,4 +60,5 @@ function tick() {
 
 
 setInterval(tick, 1000);
+
 tick(); 
