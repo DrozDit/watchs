@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Античные Часы</title>
+    
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <div class="background"></div>
+
+    
+    <button class="change-time-btn" id="changeTimeBtn">Изменить время</button>
+
+    
+    <div class="clock-container">
+        <div class="time-display">
+            <div class="digit-box" id="hour-tens"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+            <div class="digit-box" id="hour-ones"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+            <div class="colon">:</div>
+            <div class="digit-box" id="min-tens"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+            <div class="digit-box" id="min-ones"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+            <div class="colon">:</div>
+            <div class="digit-box" id="sec-tens"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+            <div class="digit-box" id="sec-ones"><img src="assets/digit_0.png" alt="0" class="digit-img"></div>
+        </div>
+
+        <div class="date-display" id="dateDisplay">
+            <div>Понедельник</div>
+            <div>15 декабря 2025</div>
+        </div>
+
+      <div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress-fill-left" id="progressFillLeft"></div>
+        <div class="progress-fill-right" id="progressFillRight"></div>
+    </div>
+</div>
+    </div>
+
+    
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <h3>Изменить время</h3>
+            <input type="text" id="timeInput" placeholder="ЧЧ:ММ:СС" maxlength="8">
+            <label>
+                <input type="checkbox" id="useCurrentTime"> Использовать текущее время
+            </label>
+            <div class="popup-buttons">
+                <button id="applyTimeBtn">Применить</button>
+                <button id="cancelBtn">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
