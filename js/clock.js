@@ -1,4 +1,3 @@
-// js/Clock.js
 import { digitImages } from './time.js';
 
 export class Clock {
@@ -58,4 +57,5 @@ export class Clock {
             <div>${day} ${month} ${year}</div>
         `;
     }
+
 }
